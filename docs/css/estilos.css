@@ -30,7 +30,7 @@ a {
 
 header .logo {
 	display: flex;
-	width: 60vw;
+	width: 40vw;
 	align-items: center;
 }
 
@@ -48,7 +48,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 40vw;
+	width: 80vw;
 }
 
 .menu a:hover {
@@ -95,7 +95,7 @@ nav {
 
 .sobre-mi p {
 	margin: 20px 0px;
-	width: 50%;
+	width: 70%;
 }
 
 /*------------------------------------------------------------------*/
@@ -142,8 +142,12 @@ nav {
 }
 
 .contenedor-formacion img {
-	padding: 50px 85px;
+	padding: 10vh 3vw;
 	background: #fff;
+}
+
+.formacion {
+	width: 30%;
 }
 
 .formacion h4{
@@ -167,6 +171,10 @@ nav {
 	margin-top: 20px;
 }
 
+.img-experiencia {
+	width: 45vw;
+}
+
 .experiencia-link {
 	margin: 0px 10px;
 	display: flex;
@@ -176,6 +184,7 @@ nav {
 
 .experiencia-link p {
 	margin: 10px 0px;
+	width: 100%;
 }
 
 
@@ -184,6 +193,7 @@ nav {
 }
 
 .experiencia-btns a {
+	text-align: center;
 	padding: 20px;
 	border: 1px solid #2A7AE4;
 	border-radius: 5px;
@@ -340,6 +350,95 @@ footer {
 /*------------------------------------- RESPONSIVE ---------------------*/
 /*------------------------------------------------------------------*/
 
+@media screen and (max-width: 1100px) {
+
+	section, nav, footer {
+	padding: 60px 120px;
+	}
+
+	h1 {
+		font-size: 42px;
+	}
+
+	.perfil {
+		width: 300px;
+		height: 300px;
+	}
+
+	.logo p {
+		font-size: 14px;
+	}
+
+	.menu a {
+		font-size: 14px;
+	}
+
+	.contenedor-formacion img {
+		padding: 7vh 4vw;
+		width: 90px;
+		height: 68px;
+	}
+
+	.img-experiencia {
+	width: 40vw;
+	}
+
+	.experiencia-btns a {
+		padding: 8px;
+	}
+
+	.contacto img {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	section, nav, footer {
+	padding: 50px 100px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	.perfil {
+		width: 250px;
+		height: 250px;
+	}
+
+	.menu {
+		width: 90vw;
+	}
+
+	.contenedor-formacion img {
+		padding: 5vh 3vw;
+		width: 80px;
+		height: 58px;
+	}
+
+	.experiencia {
+		justify-content: space-between;
+	}
+
+	.img-experiencia {
+		width: 40vw;
+	}
+
+	.experiencia-btns a {
+		padding: 15px;
+		font-size: 13px;
+		width: 50%;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+
+	.contacto img {
+		width: 350px;
+		height: 590px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	nav, section, footer {
 		padding: 32px;
@@ -351,6 +450,7 @@ footer {
 
 	.menu {
 		justify-content: flex-end;
+		width: 60vw;
 	}
 
 	.ocultar {
@@ -386,10 +486,6 @@ footer {
 		margin-bottom: 30px;
 	}
 
-	.formacion-medio {
-		margin: 0px 20px;
-	}
-
 	.formacion h4 {
 		font-size: 16px;
 	}
@@ -401,15 +497,26 @@ footer {
 	.contenedor-formacion img {
 	width: 70px;
 	height: 48px;
-	padding: 35px 77px;
+	padding: 5vh 6vw;
 	}
 
 	.experiencia {
 		flex-direction: column;
 	}
 
+	.img-experiencia {
+		width: 100%;
+	}
+
 	.experiencia-link {
 		margin: 20px 0px 80px 0px;
+	}
+
+	.experiencia-btns a {
+		padding: 20px;
+		font-size: 16px;
+		display: block;
+		margin-bottom: 10px;
 	}
 
 	.img-experiencia:nth-child(2){
@@ -428,6 +535,14 @@ footer {
 		margin: 0;
 	}
 
+}
+
+@media screen and (max-width: 500px) {
+	.contenedor-formacion img {
+	width: 60px;
+	height: 38px;
+	padding: 5vh 4vw;
+	}
 }
 
 @media screen and (max-width: 360px) {
@@ -483,6 +598,10 @@ footer {
 		margin: 20px 0px;
 	}
 
+	.formacion {
+		width: 100%;
+	}
+
 	.contenedor-formacion img {
 		width: 84px;
 		height: 58px;
@@ -494,10 +613,6 @@ footer {
 	}
 
 	.contenedor-contacto {
-		margin: 0px 16px;
-	}
-
-	.input-formulario, .textarea-formulario {
-		width: 90%;
+		margin: 0px 16px 0px 0px;
 	}
 }
