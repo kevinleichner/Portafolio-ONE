@@ -461,6 +461,11 @@ footer {
 		padding: 0;
 	}
 
+	.redes {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	.perfil {
 		width: 146px;
 		height: 146px;
@@ -538,6 +543,10 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+	.contenedor-portada p {
+		margin: 20px 0px;
+	}
+
 	.contenedor-formacion img {
 	width: 60px;
 	height: 38px;
