@@ -1,0 +1,618 @@
+body {
+	font-family: Raleway, sans-serif;
+	background: #F5F5F5;
+}
+
+section, nav, footer {
+	padding: 80px 150px;
+}
+
+h1 {
+	font-size: 52px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- NAV ---------------------*/
+/*------------------------------------------------------------------*/
+
+header .logo {
+	display: flex;
+	width: 40vw;
+	align-items: center;
+}
+
+header .logo p {
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80vw;
+}
+
+.menu a:hover {
+	border-bottom: 2px solid #2A7AE4;
+	color: #2A7AE4;
+	line-height: 10px;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- PORTADA ---------------------*/
+/*------------------------------------------------------------------*/
+
+.portada {
+	display: flex;
+}
+
+.portada .perfil {
+	margin-left: 10px;
+}
+
+.contenedor-portada {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 50px 0px;
+}
+
+.contenedor-portada a {
+	margin-right: 20px;
+}
+
+.contenedor-portada a:hover {
+	border-bottom: 2px solid #2A7AE4;
+	line-height: 10px;
+}
+
+.contenedor-portada img {
+	margin-left: 5px;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- SOBRE MI ---------------------*/
+/*------------------------------------------------------------------*/
+
+.sobre-mi p {
+	margin: 20px 0px;
+	width: 70%;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- SKILLS HOBBIES ----------------*/
+/*------------------------------------------------------------------*/
+
+.skills-hobbies h3 {
+	text-align: center;
+}
+
+.contenedor-skills, .contenedor-hobbies {
+	display: flex;
+	justify-content: space-between;
+	margin: 100px 0px;
+}
+
+.skill, .hobbie {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 16px;
+	width: 10vw;
+	height: 12vh;
+}
+
+.skill h5, .hobbie h5{
+	margin-top: 10px;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- FORMACION ACADEMICA ----------------*/
+/*------------------------------------------------------------------*/
+
+.formacion-academica h3 {
+	text-align: center;
+}
+
+.contenedor-formacion {
+	display: flex;
+	justify-content: space-around;
+	margin: 30px 0px;
+}
+
+.contenedor-formacion img {
+	padding: 10vh 3vw;
+	background: #fff;
+}
+
+.formacion {
+	width: 30%;
+}
+
+.formacion h4{
+	margin: 10px 0px;
+}
+
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- EXPERIENCIA PROFESIONAL ----------------*/
+/*------------------------------------------------------------------*/
+
+
+.experiencia-profesional h3 {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.experiencia {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.img-experiencia {
+	width: 45vw;
+}
+
+.experiencia-link {
+	margin: 0px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.experiencia-link p {
+	margin: 10px 0px;
+	width: 100%;
+}
+
+
+.experiencia-btns {
+	margin-top: 20px;
+}
+
+.experiencia-btns a {
+	text-align: center;
+	padding: 20px;
+	border: 1px solid #2A7AE4;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.btn-izq {
+	color: #2A7AE4;
+}
+
+.btn-izq:hover {
+	background: #EAECEE;
+	text-decoration: underline;
+}
+
+.btn-der {
+	background: #2A7AE4;
+	color: #fff;
+}
+
+.btn-der:hover {
+	background: #2874A6;
+	text-decoration: underline;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- CONTACTO ---------------------*/
+/*------------------------------------------------------------------*/
+
+
+.contacto {
+	display: flex;
+}
+
+.contenedor-contacto {
+	margin-left: 10px;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.grupo-formulario {
+	position: relative;
+}
+
+.input-formulario, .textarea-formulario {
+	margin-top: 30px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px #C8C8C8;
+	resize: none;
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 0px 10px;
+	padding-top: 10px;
+	font-size: 16px;
+}
+
+.textarea-formulario {
+	padding-top: 30px;
+}
+
+.input-formulario {
+	height: 46px;
+}
+
+.textarea-formulario {
+	height: 113px;
+}
+
+.formulario input[type=submit] {
+	font-family: Raleway, sans-serif;
+	width: 144px;
+	background: #2A7AE4;
+	padding-bottom: 10px;
+	color: #fff;
+}
+
+.formulario input[type=submit]:hover {
+	cursor: pointer;
+	background: #2874A6;
+}
+
+.label-formulario {
+	position: absolute;
+	bottom: 20px;
+	left: 5px;
+	color: #A2A2A2;
+}
+
+.label-mensaje {
+	top: 60px;
+}
+
+.input-formulario:not(:placeholder-shown), .textarea-formulario:not(:placeholder-shown) {
+	background: #fff;
+}
+
+.input-formulario:not(:placeholder-shown) + .label-formulario, .textarea-formulario:not(:placeholder-shown) + .label-formulario{
+	font-size: 12px;
+	transform: translateY(-20px);
+	color: #A2A2A2;
+}
+
+.input-formulario:focus + .label-formulario, .textarea-formulario:focus + .label-formulario {
+	font-size: 12px;
+	transform: translateY(-20px);
+	color: #2A7AE4;
+}
+
+.label-formulario:hover {
+	cursor: text;
+}
+
+.linea-formulario {
+	position: absolute;
+	bottom: 0.5px;
+	left: 0%;
+	right: 0%;
+	height: 2px;
+	width: 103%;
+}
+
+.linea-textarea {
+	bottom: 3px;
+}
+
+.input-formulario:focus ~ .linea-formulario, .textarea-formulario:focus ~ .linea-formulario {
+	background: #2A7AE4;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- FOOTER ---------------------*/
+/*------------------------------------------------------------------*/
+
+
+footer {
+	text-align: center;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- EXTRA ---------------------*/
+/*------------------------------------------------------------------*/
+
+.celeste {
+	background: #EAF2FD;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------------------- RESPONSIVE ---------------------*/
+/*------------------------------------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+
+	section, nav, footer {
+	padding: 60px 120px;
+	}
+
+	h1 {
+		font-size: 42px;
+	}
+
+	.perfil {
+		width: 300px;
+		height: 300px;
+	}
+
+	.logo p {
+		font-size: 14px;
+	}
+
+	.menu a {
+		font-size: 14px;
+	}
+
+	.contenedor-formacion img {
+		padding: 7vh 4vw;
+		width: 90px;
+		height: 68px;
+	}
+
+	.img-experiencia {
+	width: 40vw;
+	}
+
+	.experiencia-btns a {
+		padding: 8px;
+	}
+
+	.contacto img {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	section, nav, footer {
+	padding: 50px 100px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+
+	.perfil {
+		width: 250px;
+		height: 250px;
+	}
+
+	.menu {
+		width: 90vw;
+	}
+
+	.contenedor-formacion img {
+		padding: 5vh 3vw;
+		width: 80px;
+		height: 58px;
+	}
+
+	.experiencia {
+		justify-content: space-between;
+	}
+
+	.img-experiencia {
+		width: 40vw;
+	}
+
+	.experiencia-btns a {
+		padding: 15px;
+		font-size: 13px;
+		width: 50%;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+
+	.contacto img {
+		width: 350px;
+		height: 590px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	nav, section, footer {
+		padding: 32px;
+	}
+
+	h1, h3 {
+		font-size: 22px;
+	}
+
+	.menu {
+		justify-content: flex-end;
+		width: 60vw;
+	}
+
+	.ocultar {
+		display: none;
+	}
+
+	.contenedor-portada {
+		padding: 0;
+	}
+
+	.perfil {
+		width: 146px;
+		height: 146px;
+	}
+
+	.sobre-mi p{
+		width: 100%;
+	}
+
+
+	.contenedor-skills, .contenedor-hobbies {
+		flex-wrap: wrap;
+		margin: 0px;
+	}
+
+	.skill, .hobbie {
+	width: 22vw;
+	height: 12vh;
+	margin-bottom: 50px;
+	}
+
+	.skills-hobbies h3 {
+		margin-bottom: 30px;
+	}
+
+	.formacion h4 {
+		font-size: 16px;
+	}
+
+	.formacion p {
+		font-size: 14px;
+	}
+
+	.contenedor-formacion img {
+	width: 70px;
+	height: 48px;
+	padding: 5vh 6vw;
+	}
+
+	.experiencia {
+		flex-direction: column;
+	}
+
+	.img-experiencia {
+		width: 100%;
+	}
+
+	.experiencia-link {
+		margin: 20px 0px 80px 0px;
+	}
+
+	.experiencia-btns a {
+		padding: 20px;
+		font-size: 16px;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.img-experiencia:nth-child(2){
+		order: 0;
+	}
+
+	.experiencia-link:nth-child(1){
+		order: 1;
+	}
+
+	.contacto img {
+		display: none;
+	}
+
+	.contenedor-contacto {
+		margin: 0;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	.contenedor-formacion img {
+	width: 60px;
+	height: 38px;
+	padding: 5vh 4vw;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+	nav, section, footer {
+		padding: 16px;
+	}
+
+	p, a {
+		font-size: 14px;
+	}
+
+	.portada {
+		flex-direction: column;
+	}
+
+	.contenedor-portada{
+		order: 2;
+	}
+
+	.perfil{
+		order: 1;
+		width: 98px;
+		height: 98px;
+		margin-bottom: 20px;
+	}
+
+	.contenedor-portada h1, .contenedor-portada p, .redes {
+		margin-bottom: 20px;
+	}
+
+	.contenedor-skills, .contenedor-hobbies {
+		justify-content: space-around;
+	}
+
+	.skill, .hobbie {
+	width: 30vw;
+	height: 8vh;
+	margin-bottom: 30px;
+	}
+
+	.skills-hobbies h3 {
+		margin-bottom: 30px;
+	}
+
+	.contenedor-formacion {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.formacion-medio {
+		margin: 20px 0px;
+	}
+
+	.formacion {
+		width: 100%;
+	}
+
+	.contenedor-formacion img {
+		width: 84px;
+		height: 58px;
+		padding: 30px 30vw;
+	}
+
+	.experiencia-btns a {
+		padding: 12px 16px;
+	}
+
+	.contenedor-contacto {
+		margin: 0px 16px 0px 0px;
+	}
+}
